@@ -1,0 +1,14 @@
+dependencies {
+  compile project(':demo-common')
+  compile group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: springBootVersion
+  compile group: 'org.springframework.boot', name: 'spring-boot-starter-actuator', version: springBootVersion
+  compile group: 'org.springframework.kafka', name: 'spring-kafka', version: springKafkaVersion
+  compile group: 'org.apache.kafka', name: 'kafka-clients', version: kafkaClientsVersion
+  compile group: 'org.apache.kafka', name: 'kafka-streams', version: kafkaClientsVersion
+
+  compile 'org.springframework.cloud:spring-cloud-config-server:2.1.1.RELEASE'
+
+  testCompile group: 'org.springframework.boot', name: 'spring-boot-starter-test', version: springBootVersion
+  testCompile group: 'org.springframework.kafka', name: 'spring-kafka-test', version: springKafkaVersion
+  testCompile 'com.h2database:h2:1.4.199'
+}
